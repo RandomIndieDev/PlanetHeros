@@ -1,0 +1,75 @@
+{
+  "name": "com.kadinche.kassets",
+  "displayName": "Kassets",
+  "author": {
+    "name": "Kadinche, Corp. & Ripandy Adha",
+    "url": "https://github.com/kadinche/Kassets"
+  },
+  "version": "2.7.3",
+  "unity": "2021.3",
+  "description": "Scriptable Object Architecture extendable with R3 and/or UniTask",
+  "keywords": [
+    "ScriptableObject",
+    "Scriptable Object Architecture",
+    "R3",
+    "UniRx",
+    "UniTask",
+    "Kassets"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://package.openupm.com"
+  },
+  "samples": [
+    {
+      "displayName": "Command System Samples",
+      "description": "Contains sample usage of Kassets Command System",
+      "path": "Samples~/CommandSystemSamples"
+    },
+    {
+      "displayName": "GameEvent System Samples",
+      "description": "Contains sample usage of Kassets Event System",
+      "path": "Samples~/EventSystemSamples"
+    },
+    {
+      "displayName": "Variable System Samples",
+      "description": "Contains sample usage of Kassets Variable System",
+      "path": "Samples~/VariableSystemSamples"
+    },
+    {
+      "displayName": "Collection Samples",
+      "description": "Contains sample usage of Kassets Collection System",
+      "path": "Samples~/CollectionSamples"
+    },
+    {
+      "displayName": "Transaction Samples",
+      "description": "Contains sample usage of Kassets Transaction System",
+      "path": "Samples~/TransactionSamples"
+    },
+    {
+      "displayName": "Transaction UniTask Samples",
+      "description": "Contains sample usage of Kassets Transaction System Asynchronously with UniTask",
+      "path": "Samples~/TransactionUniTaskSamples"
+    },
+    {
+      "displayName": "UnityEvent Binder Samples",
+      "description": "Contains sample usage of Kassets UnityEventBinder components",
+      "path": "Samples~/UnityEventBinderSamples"
+    },
+    {
+      "displayName": "Add to Prefab Samples",
+      "description": "Contains sample usage of adding ScriptableObject's assets to a Prefab or other Scriptable Object.",
+      "path": "Samples~/AddToPrefabSamples"
+    },
+    {
+      "displayName": "Object Pool Samples",
+      "description": "Contains sample usage of Kassets ObjectPool (Unity 2021 or later).",
+      "path": "Samples~/ObjectPoolSamples"
+    },
+    {
+      "displayName": "Json Utility Samples",
+      "description": "Contains sample usage of Kassets Json Utility extension.",
+      "path": "Samples~/JsonUtilitySamples"
+    }
+  ]
+}
