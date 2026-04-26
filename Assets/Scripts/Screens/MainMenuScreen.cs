@@ -6,6 +6,7 @@ public class MainMenuScreen : BaseUIScreen
     [SerializeField] public BaseButton m_MyHeroButton;
     [SerializeField] public BaseButton m_GamesButton;
     [SerializeField] public BaseButton m_MissionsButton;
+    [SerializeField] public BaseButton m_ExitButton;
 
     public override void Init(UIManager manager)
     {
@@ -25,6 +26,11 @@ public class MainMenuScreen : BaseUIScreen
         {
             OpenMissionsScreen();
         });
+        
+        m_ExitButton.Subscribe(() =>
+        {
+            CloseProgram();
+        });
     }
 
     void OpenHeroScreen()
@@ -40,5 +46,14 @@ public class MainMenuScreen : BaseUIScreen
     void OpenMissionsScreen()
     {
         m_ScreenManager.OpenScreen(ScreenName.DailyMission);
+    }
+    
+    private void CloseProgram()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 }
